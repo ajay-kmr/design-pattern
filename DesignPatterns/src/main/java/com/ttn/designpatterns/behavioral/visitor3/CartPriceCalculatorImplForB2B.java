@@ -19,7 +19,8 @@ public class CartPriceCalculatorImplForB2B implements Visitor, ICartPriceCalcula
     private int hotelsCount = 0;
     private int roomsCount = 0;
 
-    public CartPriceCalculatorImplForB2B(Map<Package, Double> packageCommissionMatrix, Map<Hotel, Double> hotelDiscountMatrix,
+    public CartPriceCalculatorImplForB2B(Map<Package, Double> packageCommissionMatrix,
+                                         Map<Hotel, Double> hotelDiscountMatrix,
                                          Map<Room, Double> roomTaxMatrix) {
         this.packageCommissionMatrix = packageCommissionMatrix;
         this.hotelDiscountMatrix = hotelDiscountMatrix;
